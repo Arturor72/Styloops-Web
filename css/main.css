@@ -1,4 +1,4 @@
-html, body, section, .bk-img{
+html, body, section{
 	height: 100%;
 }
 
@@ -24,39 +24,43 @@ i:hover{
 }
 
 
+.flex-cont{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .height-50{
-	height: 50%;
-	background-color: red;
-	margin: 0%;
-
+	height: 50vh;
 }
 
-.contenedor{
-	position: absolute;
-	width: 100%;
-	height: 100vh;
+.pd-15{
+	padding: 12%;
 }
 
-.centrado {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-
-.nosotros{
+.img-nosotros{
 	background: url(../img/nosotros.jpg) center;
 	background-size: cover;
 }
 
-.pag-web{
+.img-pag-web{
 	background: url(../img/paginasweb.jpg) center;
 	background-size: cover;
 }
 
-.id-coorp{
+.img-id-coorp{
 	background: url(../img/identidadc.jpg) center;
 	background-size: cover;
+}
+
+.bk-grey{
+	background-color: #EDEDED;
+}
+
+.inf-izq{
+align-self: flex-end;
+}
+
+.txt-center{
+	text-align: center;
 }
