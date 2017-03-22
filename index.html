@@ -3,15 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Styloops</title>
+	<link rel="stylesheet" href="vendors/normalize/normalize.css">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 	<link type="text/css" rel="stylesheet" href="vendors/bs-3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendors/fa-4.7/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
 </head>
 
 <body>
 	
 	<section id="inicio" class="flex-cont">
-		<img src="img/logo-01.png" alt="">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="name">
+			<p>STYLOOPS</p>
+		</div>
 	</section>
 
 	<section id="nosotros">
@@ -51,43 +59,50 @@
 	</section>
 	
 	<nav>
-		<div class="col-sm-2 col-sm-offset-1">
-	    	<a href="#inicio">
-		    	<i class="fa fa-home fa-4x">
-		    		<h4>Inicio</h4>
-		    	</i>		    	
-	    	</a>
-	    </div>
-	    <div class="col-sm-2">
-	    	<a href="#nosotros">
-		    	<i class="fa fa-users fa-4x">
-		    		<h4>Nosotros</h4>
-		    	</i>			    
-			</a>
-	    </div>
-	    <div class="col-sm-2">
-	    	<a href="#servicios">
-	    		<i class="fa fa-handshake-o fa-4x">
-	    			<h4>Servicios</h4>
-	    		</i>		    	
-		    </a>
-	    </div>
-	    <div class="col-sm-2">
-	    	<a href="#portafolio">
-	    		<i class="fa fa-briefcase fa-4x">
-	    			<h4>Portafolio</h4>
-	    		</i>		    	
-		    </a>
-	    </div>		
-	    <div class="col-sm-2">
-	    	<a href="#contacto">
-	    		<i class="fa fa-envelope fa-4x">
-	    			<h4>Contacto</h4>
-	    		</i>		    	
-		    </a>
-	    </div>	
+		<div class="nav_menu">
+			<div class="menu_item col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 active">
+				<a href="#inicio">
+					<i class="fa fa-home fa-2x">
+					</i>
+					<p class="menu_text">Inicio</p>
+				</a>
+			</div>
+			<div class="menu_item col-sm-2 col-xs-2 ">
+				<a href="#nosotros">
+					<i class="fa fa-users fa-2x">
+
+					</i>
+					<p class="menu_text">Nosotros</p>
+				</a>
+			</div>
+			<div class="menu_item col-sm-2 col-xs-2">
+				<a href="#servicios">
+					<i class="fa fa-handshake-o fa-2x">
+
+					</i>
+					<p class="menu_text">Servicios</p>
+				</a>
+			</div>
+			<div class="menu_item col-sm-2 col-xs-2">
+				<a href="#portafolio">
+					<i class="fa fa-briefcase fa-2x">
+
+					</i>
+					<p class="menu_text">Portafolio</p>
+				</a>
+			</div>
+			<div class="menu_item col-sm-2 col-xs-2">
+				<a href="#contacto">
+					<i class="fa fa-envelope fa-2x">
+					</i>
+					<p class="menu_text">Contacto</p>
+				</a>
+			</div>
+		</div>
 	</nav>
 
+	<script src="vendors/jq-3.1.1/jquery-3.1.1.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 

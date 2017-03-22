@@ -1,8 +1,9 @@
 html, body, section{
 	height: 100%;
+	font-family: 'Yantramanav', sans-serif;
 }
 
-/*Navegador*/
+/*NAVEGADOR*/
 
 nav{
 	text-align: center;
@@ -12,22 +13,46 @@ nav{
 }
 
 nav div:nth-child(n):nth-child(-n+4){
-	border-right: 2px solid #6b6b6b;
+	border-right: 1px solid #6b6b6b;
 }
 
-i{
-	color:#6b6b6b;	
+nav div a{
+	color:#6b6b6b;
+	text-decoration: none;
 }
 
-i:hover{
+nav div a:hover{
 	color: #3eb5c0;
+	text-decoration: none;
+}
+nav div a:focus{
+	color:#3eb5c0;
+	text-decoration: none;
 }
 
+.menu_text{
+	font-size: 1.5em;
+	font-family: 'Yantramanav', sans-serif;
+	margin: 0;
+}
 
+/***INICIO***/
+
+#inicio .name{
+	font-size: 2em;
+}
 .flex-cont{
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.logo{
+	margin:0 auto;
+}
+
+.logo img{
+	width: 30em;
 }
 
 .height-50{
@@ -37,7 +62,7 @@ i:hover{
 .pd-15{
 	padding: 12%;
 }
-
+/***NOSOTROS***/
 .img-nosotros{
 	background: url(../img/nosotros.jpg) center;
 	background-size: cover;
