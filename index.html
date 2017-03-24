@@ -13,91 +13,89 @@
 
 <body>
 	
-	<section id="inicio" class="flex-cont">
+	<section id="inicio" class="flex-container">
 		<div class="logo">
-			<img src="img/logo.png" alt="">
-		</div>
-		<div class="name">
-			<p>STYLOOPS</p>
+			<img class="logo__img" src="img/logo.png" alt="">
+			<div class="logo__name">
+				<p>STYLOOPS</p>
+			</div>
 		</div>
 	</section>
 
 	<section id="nosotros">
-			<div class="flex-cont height-50 pd-15 bk-grey">
-				<div class="col-sm-12 ">
-					<h2>Nosotros</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
-				</div>
+		<div class="flex-container we-are">
+			<div class="we-are__text">
+				<h2>Nosotros</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
 			</div>
-			<div class="height-50 img-nosotros ">
-				<div class="flex-cont">
-					<h3 class="inf-izq">Conócenos más</h3>
-				</div>
-			</div>
+		</div>
+		<div class="flex-container team">
+			<h3 class="">Conócenos más</h3>			
+		</div>
 	</section>
 
 	<section id="servicios">
-		<div class="flex-cont height-50 pd-15 img-pag-web">
-			<div class="col-sm-12 txt-center">
-				<h2>Paginas web</h2>
-			</div>
+		<div class="flex-container service web-page">			
+			<h2 class="service__title" >Páginas web</h2>
+			<button type="button" class="service__button">Paquetes</button>			
 		</div>
-		<div class="height-50 img-id-coorp">
-			<div class="col-sm-12">
-				<h3>Conócenos más</h3>
-			</div>
+		<div class="flex-container service corporate-identity">			
+			<h2 class="service__title" >Identidad coorporativa</h2>
+			<button type="button" class="service__button">Paquetes</button>			
 		</div>
-
 	</section>
 
-	<section id="portafolio">
-		
+	<section id="portafolio" class="portfolio">
+		<div class="col-sm-6">
+			<button type="button" class="portfolio__button">Páginas web</button>
+		</div>
+		<div class="col-sm-6">
+			<button type="button" class="portfolio__button">Identidad coorporativa</button>
+		</div>
 	</section>
 
 	<section id="contacto">
 		
 	</section>
 	
-	<nav>
-		<div class="nav_menu">
-			<div class="menu_item col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 active">
-				<a href="#inicio">
-					<i class="fa fa-home fa-2x">
-					</i>
-					<p class="menu_text">Inicio</p>
-				</a>
-			</div>
-			<div class="menu_item col-sm-2 col-xs-2 ">
-				<a href="#nosotros">
-					<i class="fa fa-users fa-2x">
+	<nav class="menu">
+		<div class="menu__item col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 active">
+			<a class="menu__item__anchor" href="#inicio">
+				<i class="fa fa-home fa-2x">
+				</i>
+				<p class="menu__item__text">Inicio</p>
+			</a>
+		</div>
+		<div class="menu__item col-sm-2 col-xs-2 ">
+			<a class="menu__item__anchor" href="#nosotros">
+				<i class="fa fa-users fa-2x">
 
-					</i>
-					<p class="menu_text">Nosotros</p>
-				</a>
-			</div>
-			<div class="menu_item col-sm-2 col-xs-2">
-				<a href="#servicios">
-					<i class="fa fa-handshake-o fa-2x">
+				</i>
+				<p class="menu__item__text">Nosotros</p>
+			</a>
+		</div>
+		<div class="menu__item col-sm-2 col-xs-2">
+			<a class="menu__item__anchor" href="#servicios">
+				<i class="fa fa-handshake-o fa-2x">
 
-					</i>
-					<p class="menu_text">Servicios</p>
-				</a>
-			</div>
-			<div class="menu_item col-sm-2 col-xs-2">
-				<a href="#portafolio">
-					<i class="fa fa-briefcase fa-2x">
+				</i>
+				<p class="menu__item__text">Servicios</p>
+			</a>
+		</div>
+		<div class="menu__item col-sm-2 col-xs-2">
+			<a class="menu__item__anchor" href="#portafolio">
+				<i class="fa fa-briefcase fa-2x">
 
-					</i>
-					<p class="menu_text">Portafolio</p>
-				</a>
-			</div>
-			<div class="menu_item col-sm-2 col-xs-2">
-				<a href="#contacto">
-					<i class="fa fa-envelope fa-2x">
-					</i>
-					<p class="menu_text">Contacto</p>
-				</a>
-			</div>
+				</i>
+				<p class="menu__item__text">Portafolio</p>
+			</a>
+		</div>
+		<div class="menu__item col-sm-2 col-xs-2">
+			<a class="menu__item__anchor" href="#contacto">
+				<i class="fa fa-envelope fa-2x">
+				</i>
+				<p class="menu__item__text">Contacto</p>
+			</a>
 		</div>
 	</nav>
 

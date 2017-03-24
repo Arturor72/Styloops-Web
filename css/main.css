@@ -3,89 +3,116 @@ html, body, section{
 	font-family: 'Yantramanav', sans-serif;
 }
 
-/*NAVEGADOR*/
+/***MENU***/
 
-nav{
+.menu{
 	text-align: center;
 	bottom: 3%;
 	width: 100%;
 	position: fixed;
 }
 
-nav div:nth-child(n):nth-child(-n+4){
-	border-right: 1px solid #6b6b6b;
-}
+	.menu__item:nth-child(n):nth-child(-n+4){
+		border-right: 1px solid #6b6b6b;
+	}
 
-nav div a{
-	color:#6b6b6b;
-	text-decoration: none;
-}
+		.menu__item__anchor{
+			color:#6b6b6b;
+			text-decoration: none;
+		}
 
-nav div a:hover{
-	color: #3eb5c0;
-	text-decoration: none;
-}
-nav div a:focus{
-	color:#3eb5c0;
-	text-decoration: none;
-}
+		.menu__item__anchor:hover{
+			color: #3eb5c0;
+			text-decoration: none;
+		}
+		.menu__item__anchor:focus{
+			color:#3eb5c0;
+			text-decoration: none;
+		}
 
-.menu_text{
-	font-size: 1.5em;
-	font-family: 'Yantramanav', sans-serif;
-	margin: 0;
-}
+		.menu__item__text{
+			font-size: 1.5em;
+			font-family: 'Yantramanav', sans-serif;
+			margin: 0;
+		}
 
 /***INICIO***/
-
-#inicio .name{
-	font-size: 2em;
-}
-.flex-cont{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
 .logo{
-	margin:0 auto;
+	text-align: center;
 }
 
-.logo img{
-	width: 30em;
-}
+	.logo__img{
+		width: 30em;
+	}
 
-.height-50{
+	.logo__name{
+		font-size: 2em;
+	}
+
+
+/***NOSOTROS***/
+.we-are{
+	background-color: #EDEDED;
 	height: 50vh;
 }
 
-.pd-15{
+.we-are__text{
 	padding: 12%;
 }
-/***NOSOTROS***/
-.img-nosotros{
+
+.team{
 	background: url(../img/nosotros.jpg) center;
 	background-size: cover;
+	height: 50vh;
 }
 
-.img-pag-web{
+
+/***SERVICIOS***/
+.service{
+	height: 50vh;
+}
+
+	.service__title{
+		font-weight: bold;
+	}
+
+	.service__button{
+		padding: 7px 12px;
+		border-color: transparent;
+		border-radius: 5px;
+		background-color: #e8725d;
+		color: #fff;
+	}
+
+	.service__button:hover{
+		background-color: #dd5840; 	
+	}
+
+.web-page{
 	background: url(../img/paginasweb.jpg) center;
 	background-size: cover;
 }
 
-.img-id-coorp{
+.corporate-identity{
 	background: url(../img/identidadc.jpg) center;
 	background-size: cover;
 }
 
-.bk-grey{
-	background-color: #EDEDED;
+/***PORTFOLIO***/
+
+.portfolio{
+	
 }
 
-.inf-izq{
-align-self: flex-end;
+.portfolio__button{
+	width: 100%;
 }
 
-.txt-center{
-	text-align: center;
+
+/*** ***/
+.flex-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
