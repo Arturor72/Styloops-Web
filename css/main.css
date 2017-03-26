@@ -3,6 +3,35 @@ html, body, section{
 	font-family: 'Yantramanav', sans-serif;
 }
 
+/**LOADER**/
+
+#loader{
+	position: absolute;
+	background-color: #F8F8F8;
+	width: 100%;
+	height: 100vh;
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+
+.loaded {
+	transform: translateY(-100%);
+}
+.logo__loader{
+	text-align: center;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.logo__loader__img{
+	width: 10em;
+}
+
+.logo__loader__name{
+	font-size: 1em;
+}
+
+
 /***MENU***/
 
 .menu{
@@ -10,6 +39,14 @@ html, body, section{
 	bottom: 3%;
 	width: 100%;
 	position: fixed;
+	transform: translateX(-100%);
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+}
+
+.menu__loaded{
+	transform: translateX(0%);
 }
 
 	.menu__item:nth-child(n):nth-child(-n+4){
@@ -34,6 +71,10 @@ html, body, section{
 			font-size: 1.5em;
 			font-family: 'Yantramanav', sans-serif;
 			margin: 0;
+		}
+		.active a{
+			color:#3eb5c0;
+			text-decoration: none;
 		}
 
 /***INICIO***/
@@ -101,7 +142,7 @@ html, body, section{
 /***PORTFOLIO***/
 
 .portfolio{
-	
+
 }
 
 .portfolio__button{
