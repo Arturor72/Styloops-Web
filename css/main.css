@@ -18,36 +18,45 @@ html, body, section{
 .loaded {
 	transform: translateY(-100%);
 }
-.logo__loader{
+
+.logo-loader{
 	text-align: center;
 	font-family: 'Yantramanav', sans-serif;
 }
 
-.logo__loader__img{
-	width: 10em;
-}
+	.logo-loader__img{
+		width: 15em;
+	}
 
-.logo__loader__name{
-	font-size: 1em;
-}
+	.logo-loader__name{
+		font-size: 1.5em;
+	}
 
+	.logo-loader__icon{
+		color:#6b6b6b;
+	}
 
 /***MENU***/
 
 .menu{
 	text-align: center;
-	bottom: 3%;
+	bottom: 0%;
 	width: 100%;
 	position: fixed;
 	transform: translateX(-100%);
 	transition-property: all;
 	transition-duration: 2s;
 	transition-timing-function: ease;
+	background-color: #FFFFFF;
+	/*border-top: 1px solid #6b6b6b ;*/
+	padding-top: 30px;
+	padding-bottom: 30px;
+	box-shadow: 0 -3px 3px -3px #ededed;
 }
 
-.menu__loaded{
-	transform: translateX(0%);
-}
+	.menu__loaded{
+		transform: translateX(0%);
+	}
 
 	.menu__item:nth-child(n):nth-child(-n+4){
 		border-right: 1px solid #6b6b6b;
@@ -62,8 +71,10 @@ html, body, section{
 			color: #3eb5c0;
 			text-decoration: none;
 		}
+
+
 		.menu__item__anchor:focus{
-			color:#3eb5c0;
+			color: #3eb5c0;
 			text-decoration: none;
 		}
 
@@ -83,7 +94,7 @@ html, body, section{
 }
 
 	.logo__img{
-		width: 30em;
+		width: 25em;
 	}
 
 	.logo__name{
@@ -102,7 +113,7 @@ html, body, section{
 }
 
 .team{
-	background: url(../img/nosotros.jpg) center;
+	background: url(../img/nosotros.jpg) left;
 	background-size: cover;
 	height: 50vh;
 }
@@ -156,4 +167,17 @@ html, body, section{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 970px) {
+	.we-are, .team, .web-page, .corporate-identity{
+		height: 100vh;
+	}
+	
+	.menu{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
 }

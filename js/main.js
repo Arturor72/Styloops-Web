@@ -21,7 +21,10 @@ var main=function () {
         e.preventDefault();
     });
     
-    
+    $(window).ready(function(){
+      $("html, body").animate({ scrollTop: $("#inicio").scrollTop() }, 1000);  
+    }); 
+
     $(window).scroll(function () {
          var fromTop=$(this).scrollTop();
           console.log("From top"+fromTop);
@@ -43,7 +46,7 @@ var main=function () {
 
              menuItems
                  .parent().removeClass("active")
-                 .end().filter("[href=\"#"+id+"\"]").parent().addClass("active");
+                 .end().filter("[href=\"#"+id+"\"]").parent().addClass("active").blur();
          }
 
     });
