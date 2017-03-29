@@ -3,6 +3,10 @@ html, body, section{
 	font-family: 'Yantramanav', sans-serif;
 }
 
+p{
+	font-size: 1.5em;
+}
+
 /**LOADER**/
 
 #loader{
@@ -29,7 +33,7 @@ html, body, section{
 	}
 
 	.logo-loader__name{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	.logo-loader__icon{
@@ -98,7 +102,7 @@ html, body, section{
 	}
 
 	.logo__name{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 
@@ -151,14 +155,40 @@ html, body, section{
 }
 
 /***PORTFOLIO***/
-
 .portfolio{
+	text-align: center;
+}
 
+.portfolio .col-xs-6{
+	padding: 0px;
 }
 
 .portfolio__button{
 	width: 100%;
+	background-color: #e8725d;
+	padding: 10px ;
 }
+
+.portfolio__button:hover{
+	background-color: #dd5840;
+}
+
+
+/*** CONTACTO ***/
+.contact__circle{
+	width: 70px;
+	height: 70px;
+	border: 2px solid #e8725d;
+	border-radius: 50%;
+	color:#6b6b6b;
+	text-decoration: none;
+}
+
+.contact__circle:hover{
+	color:#000;
+	text-decoration: none;
+}
+
 
 
 /*** ***/
@@ -171,7 +201,7 @@ html, body, section{
 
 
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 992px) {
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 100vh;
 	}
