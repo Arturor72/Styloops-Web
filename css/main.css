@@ -182,6 +182,25 @@ p{
 	background-color: #dd5840;
 }
 
+.portfolio__slider{
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+	height: 120px;
+}
+.portfolio__slider .portfolio__slider__banner{
+	position: relative;
+	width: 100%;
+}
+.portfolio__slider .portfolio__slider__banner img{
+	vertical-align: top;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left:100%;
+}
+
+
 
 /*** CONTACTO ***/
 .contact__circle{
