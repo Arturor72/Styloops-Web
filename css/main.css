@@ -4,7 +4,7 @@ html, body, section{
 }
 
 p{
-	font-size: 1.5em;
+	font-size: 2.3em;
 }
 
 /**LOADER**/
@@ -68,7 +68,7 @@ p{
 
 		.menu__item__anchor{
 			color:#6b6b6b;
-			text-decoration: none;
+			text-decoration: none;					
 		}
 
 		.menu__item__anchor:hover{
@@ -82,8 +82,11 @@ p{
 			text-decoration: none;
 		}
 
+		.menu__item__anchor i{
+			font-size: 3em;	
+		}
+
 		.menu__item__text{
-			font-size: 1.5em;
 			font-family: 'Yantramanav', sans-serif;
 			margin: 0;
 		}
@@ -121,7 +124,6 @@ p{
 	background-size: cover;
 	height: 50vh;
 }
-
 
 /***SERVICIOS***/
 .service{
@@ -209,5 +211,13 @@ p{
 	.menu{
 		padding-top: 12px;
 		padding-bottom: 12px;
+	}
+
+	.menu__item__anchor i{
+		font-size: 2em;	
+	}
+
+	p{
+		font-size: 1.3em;
 	}
 }
