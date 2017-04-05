@@ -7,6 +7,7 @@ p{
 	font-size: 2.3em;
 }
 
+
 /**LOADER**/
 
 #loader{
@@ -29,7 +30,7 @@ p{
 }
 
 	.logo-loader__img{
-		width: 15em;
+		width: 25em;
 	}
 
 	.logo-loader__name{
@@ -101,7 +102,7 @@ p{
 }
 
 	.logo__img{
-		width: 25em;
+		width: 30em;
 	}
 
 	.logo__name{
@@ -125,11 +126,18 @@ p{
 	height: 50vh;
 	display: flex;
 	justify-content: flex-end;
-		align-items: flex-end;
+	align-items: flex-end;
 }
 
 	.team__text{
+		margin-bottom: 15%;
+		margin-right: 5%;
+		text-decoration: none;
+		color:#000000;
+	}
 
+	.team__text:hover{
+		text-decoration: none;
 	}
 
 /***SERVICIOS***/
@@ -203,13 +211,20 @@ p{
 
 
 /*** CONTACTO ***/
+.contact{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; 
+}
+
 .contact__circle{
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	border: 2px solid #e8725d;
 	border-radius: 50%;
 	color:#6b6b6b;
 	text-decoration: none;
+	margin: 15px;
 }
 
 .contact__circle:hover{
@@ -217,6 +232,9 @@ p{
 	text-decoration: none;
 }
 
+	.contact__circle i{
+		font-size: 4em;
+	}
 
 
 /*** ***/
@@ -228,12 +246,20 @@ p{
 }
 
 
-
-@media screen and (min-width: 992px) {
+/*sm 768*/
+@media screen and (min-width: 992px) { 
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 100vh;
 	}
 	
+	.logo-loader__img{
+		width: 15em;
+	}
+
+	.logo__img{
+		width: 20em;
+	}
+
 	.menu{
 		padding-top: 12px;
 		padding-bottom: 12px;
@@ -245,5 +271,14 @@ p{
 
 	p{
 		font-size: 1.3em;
+	}
+
+	.contact__circle{
+		width: 70px;
+		height: 70px;
+	}
+
+	.contact__circle i{
+		font-size: 2em;
 	}
 }
