@@ -190,22 +190,28 @@ p{
 	background-color: #dd5840;
 }
 
-.portfolio__slider{
+.slider__banner {
 	overflow: hidden;
+	position: relative;
 	z-index: 1000;
-	position: relative;
-	height: 120px;
+	margin: 0 auto;
+	/*width: 700px;*/
 }
-.portfolio__slider .portfolio__slider__banner{
+.slider__banner .banner{
 	position: relative;
 	width: 100%;
+	/*background-color: brown;*/
+	/*height: 200px;*/
 }
-.portfolio__slider .portfolio__slider__banner img{
+
+.slider__banner .banner img{
 	vertical-align: top;
+	display: block;
 	position: absolute;
-	width: 100%;
-	top: 0;
-	left:100%;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	left: 25%;
 }
 
 
