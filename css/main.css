@@ -4,7 +4,7 @@ html, body, section{
 }
 
 p{
-	font-size: 2.3em;
+	font-size: 1em;
 }
 
 
@@ -31,7 +31,7 @@ p{
 }
 
 	.logo-loader__img{
-		width: 25em;
+		width: 15em;
 	}
 
 	.logo-loader__name{
@@ -64,8 +64,13 @@ p{
 		transform: translateX(0%);
 	}
 
+	.menu__item{
+		padding: 0px;
+	}
+
 	.menu__item:nth-child(n):nth-child(-n+4){
 		border-right: 1px solid #6b6b6b;
+
 	}
 
 		.menu__item__anchor{
@@ -85,12 +90,13 @@ p{
 		}
 
 		.menu__item__anchor i{
-			font-size: 3em;	
+			font-size: 1.2em;	
 		}
 
 		.menu__item__text{
 			font-family: 'Yantramanav', sans-serif;
 			margin: 0;
+			font-size: 0.8em;
 		}
 		.active a{
 			color:#3eb5c0;
@@ -103,7 +109,7 @@ p{
 }
 
 	.logo__img{
-		width: 30em;
+		width: 15em;
 	}
 
 	.logo__name{
@@ -238,8 +244,8 @@ p{
 }
 
 .contact__circle{
-	width: 100px;
-	height: 100px;
+	width: 60px;
+	height: 60px;
 	border: 2px solid #e8725d;
 	border-radius: 50%;
 	color:#6b6b6b;
@@ -253,7 +259,7 @@ p{
 }
 
 	.contact__circle i{
-		font-size: 4em;
+		font-size: 1em;
 	}
 
 
@@ -265,6 +271,49 @@ p{
 	flex-direction: column;
 }
 
+
+/*sm 768*/
+@media screen and (min-width: 779px) and (max-width: 992px) { 
+	.we-are, .team, .web-page, .corporate-identity{
+		height: 50vh;
+	}
+	
+	.logo-loader__img{
+		width: 10em;
+	}
+
+	.logo__img{
+		width: 15em;
+	}
+
+	.menu{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.menu__item__anchor i{
+		font-size: 1.6em;	
+	}
+
+	p{
+		font-size: 1em;
+	}
+
+	.contact__circle{
+		width: 65px;
+		height: 65px;
+	}
+
+	.contact__circle i{
+		font-size: 1.6em;
+	}
+
+	.menu__item__text{
+		font-size: 1.2em;
+	}
+
+
+}
 
 /*sm 768*/
 @media screen and (min-width: 992px) { 
@@ -302,5 +351,10 @@ p{
 		font-size: 2em;
 	}
 
+	.menu__item__text{
+		font-size: 1.2em;
+	}
+
 
 }
+
