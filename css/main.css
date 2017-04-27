@@ -8,6 +8,7 @@ p{
 }
 
 
+
 /**LOADER**/
 
 #loader{
@@ -112,7 +113,7 @@ p{
 
 /***NOSOTROS***/
 .we-are{
-	background-color: #EDEDED;
+	background-color: #F8F8F8;
 	height: 50vh;
 }
 
@@ -121,33 +122,30 @@ p{
 }
 
 .team{
-	background: url(../img/nosotros.jpg) left;
-	background-size: cover;
+	background-color: #FFFFFF;
 	height: 50vh;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	
 }
 
+	.team img{
+		height: 65%;
+	}
+
 	.team__text{
-		margin-bottom: 15%;
-		margin-right: 5%;
 		text-decoration: none;
 		color:#000000;
 	}
 
+
 	.team__text:hover{
 		text-decoration: none;
+		color:#000000;
 	}
 
 /***SERVICIOS***/
 .service{
 	height: 50vh;
 }
-
-	.service__title{
-		font-weight: bold;
-	}
 
 	.service__button{
 		padding: 7px 12px;
@@ -162,14 +160,30 @@ p{
 	}
 
 .web-page{
-	background: url(../img/paginasweb.jpg) center;
-	background-size: cover;
+	transition: background-color 0.8s ease;
+	background-color: #FFFFFF;
 }
 
-.corporate-identity{
-	background: url(../img/identidadc.jpg) center;
-	background-size: cover;
+.web-page:hover{
+	background-color: #F8F8F8;
 }
+
+	.web-page img{
+		height: 35%;
+	}
+
+.corporate-identity{
+	transition: background-color 0.8s ease;
+	background-color: #F8F8F8;
+}
+
+.corporate-identity:hover{
+	background-color: #FFFFFF;
+}
+
+	.corporate-identity img{
+		height: 35%;
+	}
 
 /***PORTFOLIO***/
 .portfolio{
@@ -287,4 +301,6 @@ p{
 	.contact__circle i{
 		font-size: 2em;
 	}
+
+
 }

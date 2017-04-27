@@ -8,7 +8,7 @@
 	<link type="text/css" rel="stylesheet" href="vendors/bs-3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendors/fa-4.7/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yantramanav:300" rel="stylesheet">
 	
 </head>
 
@@ -42,7 +42,8 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta commodi ipsam provident ex obcaecati nulla facere harum tenetur qui accusantium saepe in perspiciatis dolores recusandae, ipsa eligendi, excepturi quisquam!</p>
 			</div>
 		</div>
-		<div class="team col-xs-12 col-md-6">
+		<div class="flex-container team col-xs-12 col-md-6">
+			<img src="img/team.png" alt="">
 			<a class="team__text" href="">
 				<h3>Conócenos más</h3>
 			</a>			
@@ -50,11 +51,13 @@
 	</section>
 
 	<section id="servicios">
-		<div class="flex-container service web-page col-xs-12 col-md-6">			
+		<div class="flex-container service web-page col-xs-12 col-md-6">	
+			<img src="img/paginasweb.png" alt="">		
 			<h2 class="service__title" >Páginas web</h2>
 			<button type="button" class="service__button">Paquetes</button>			
 		</div>
-		<div class="flex-container service corporate-identity col-xs-12 col-md-6">			
+		<div class="flex-container service corporate-identity col-xs-12 col-md-6">	
+			<img src="img/identidadc.png" alt="">		
 			<h2 class="service__title" >Identidad coorporativa</h2>
 			<button type="button" class="service__button">Paquetes</button>			
 		</div>
@@ -67,11 +70,11 @@
 			</div>
 			<section class="slider__banner">
 				<div class="banner" id="banner">
-					<img class="slide active first" src="img/webs/banner.jpg" alt="imagen1" width="300px">
-					<img class="slide active" src="img/webs/banner2.jpg" alt="imagen2" width="300px">
-					<img class="slide active" src="img/webs/banner3.jpg" alt="imagen3" width="300px">
-					<img class="slide" src="img/webs/banner4.jpg" alt="imagen4" width="300px">
-					<img class="slide" src="img/webs/banner5.jpg" alt="imagen5" width="300px">
+					<img class="slide active first" src="img/webs/banner.jpg" alt="imagen1" >
+					<img class="slide active" src="img/webs/banner2.jpg" alt="imagen2" >
+					<img class="slide active" src="img/webs/banner3.jpg" alt="imagen3" >
+					<img class="slide" src="img/webs/banner4.jpg" alt="imagen4" >
+					<img class="slide" src="img/webs/banner5.jpg" alt="imagen5" >
 				</div>
 			</section>
 		</div>
@@ -94,15 +97,71 @@
 	<section id="contacto" class="flex-container">
 		
 		<div class="col-md-12 contact">
-			<a class="contact__circle flex-container">
+			<a class="contact__circle flex-container" data-toggle="modal" data-target="#map">
 				<i class="fa fa-map-marker" aria-hidden="true"></i>
 			</a>
-			<a class="contact__circle flex-container">
+			<a class="contact__circle flex-container" data-toggle="modal" data-target="#email">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 			</a>
 			<a class="contact__circle flex-container">
 				<i class="fa fa-plus" aria-hidden="true"></i>
 			</a>
+		</div>
+
+		<div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Ubícanos</h4>
+		      </div>
+		      <div class="modal-body">
+		      <div class="row">
+		          <div class="col-md-8">
+		          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.083689340354!2d-77.03709914895833!3d-12.037759330334172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf3008d903c9%3A0x59455aef4b13b926!2sAv.+de+Los+Pr%C3%B3ceres%2C+R%C3%ADmac!5e0!3m2!1ses!2spe!4v1493247255114" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		          </div>
+		          <div class="col-md-4">
+		          	<p>Styloops</p>
+		          	<p>dnfjnogsdf :D</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Escríbenos</h4>
+		      </div>
+		      <div class="modal-body">
+
+	            <div class="row">
+		            <div class="col-md-12">
+		                <form>
+		                  <div class="form-group">			                    
+		                    <input class="form-control" placeholder="Nombre">
+		                  </div>
+		                  <div class="form-group">			                    
+		                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrónico">
+		                  </div>
+		                  <div class="form-group">			                    
+		                    <input class="form-control" placeholder="Teléfono">
+		                  </div>
+		                  <div class="form-group">			                    
+		                    <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+		                  </div>
+		                  <button type="submit" class="btn btn-default ">Enviar</button>
+		                </form>
+		            </div>
+		        </div>
+			  
+		      </div>
+		    </div>
+		  </div>
 		</div>
 
 	</section>
@@ -141,21 +200,9 @@
 	</nav>
 
 	<script src="vendors/jq-3.1.1/jquery-3.1.1.js"></script>
+	<script src="vendors/bs-3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
 
- <!--
-
- 		<ul>
-			<li>
-				<a href="#inicio">
-			    	<i class="fa fa-home fa-3x">
-			    		<h4>Inicio</h4>
-			    	</i>		    	
-		    	</a>
-			</li>
-		</ul>
- 	    
- -->
