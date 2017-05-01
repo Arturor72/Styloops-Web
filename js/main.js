@@ -59,42 +59,51 @@ var main=function () {
     toggleServices();
 
     function toggleServices(){
+      var inweb=false;
+      var incorp=false;
+
       var webp=$(".web-page");
       var corporatei=$(".corporate-identity");
       var color1="#FFFFFF";
       var color2="#F8F8F8";
       webp.hover(function(){
-          corporatei.css({
+        corporatei.css({
             "background-color":color1
         });
         webp.css({
           "background-color":color2
       });
+      inweb=true;
       }, function(){
+        inweb=false;
+        verifyHoverService(inweb,incorp, color1, color2);
+      });
+      corporatei.hover(function(){
         corporatei.css({
           "background-color":color2
       });
-      webp.css({
-        "background-color":color1
-    });
-      });
-      corporatei.hover(function(){
-          webp.css({
-            "background-color":color2
-        });
-        corporatei.css({
-          "background-color":color1
-      });
-      }, function(){
         webp.css({
-          "background-color":color1
+            "background-color":color1
+        });
+        incorp=true;
+      }, function(){
+        incorp=false;
+        verifyHoverService(inweb,incorp, color1, color2);
       });
+    }
+function verifyHoverService(inweb, incorp, color1, color2){
+  var webp=$(".web-page");
+  var corporatei=$(".corporate-identity");
+    if(!inweb&&!incorp){
+      console.log("Reset");
       corporatei.css({
         "background-color":color2
     });
-      });
-    }
-
+    webp.css({
+      "background-color":color1
+    });
+  }
+}
 }
 
 $(document).ready(main());
