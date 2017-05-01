@@ -75,7 +75,7 @@ p{
 
 		.menu__item__anchor{
 			color:#6b6b6b;
-			text-decoration: none;					
+			text-decoration: none;
 		}
 
 		.menu__item__anchor:hover{
@@ -90,7 +90,7 @@ p{
 		}
 
 		.menu__item__anchor i{
-			font-size: 1.2em;	
+			font-size: 1.2em;
 		}
 
 		.menu__item__text{
@@ -130,7 +130,7 @@ p{
 .team{
 	background-color: #FFFFFF;
 	height: 50vh;
-	
+
 }
 
 	.team img{
@@ -162,7 +162,7 @@ p{
 	}
 
 	.service__button:hover{
-		background-color: #dd5840; 	
+		background-color: #dd5840;
 	}
 
 .web-page{
@@ -240,7 +240,7 @@ p{
 .contact{
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 }
 
 .contact__circle{
@@ -273,11 +273,11 @@ p{
 
 
 /*sm 768*/
-@media screen and (min-width: 779px) and (max-width: 992px) { 
+@media screen and (min-width: 779px) and (max-width: 992px) {
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 50vh;
 	}
-	
+
 	.logo-loader__img{
 		width: 10em;
 	}
@@ -292,7 +292,7 @@ p{
 	}
 
 	.menu__item__anchor i{
-		font-size: 1.6em;	
+		font-size: 1.6em;
 	}
 
 	p{
@@ -316,11 +316,11 @@ p{
 }
 
 /*sm 768*/
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 100vh;
 	}
-	
+
 	.logo-loader__img{
 		width: 15em;
 	}
@@ -335,7 +335,7 @@ p{
 	}
 
 	.menu__item__anchor i{
-		font-size: 2em;	
+		font-size: 2em;
 	}
 
 	p{
@@ -357,4 +357,3 @@ p{
 
 
 }
-
