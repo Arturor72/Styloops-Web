@@ -140,13 +140,21 @@ p{
 	.team__text{
 		text-decoration: none;
 		color:#000000;
+		cursor: pointer;
 	}
 
+	.team-info{
+		text-align: center;
+	}
 
 	.team__text:hover{
 		text-decoration: none;
 		color:#000000;
 	}
+
+.team-modal{
+	height: 200px;
+}
 
 /***SERVICIOS***/
 .service{
