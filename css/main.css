@@ -279,8 +279,45 @@ p{
 	flex-direction: column;
 }
 
+#map{
+	text-align: center;
+}
 
-/*sm 768*/
+
+
+@media screen and (max-width: 399px){
+	.grande{
+		display: none;
+	}
+
+	.mediano{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 778px){
+	.grande{
+		display: none;
+	}
+
+	.pequeño{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 779px){
+	.mediano{
+		display: none;
+	}
+
+	.pequeño{
+		display: none;
+	}
+}
+
+
+
+
 @media screen and (min-width: 779px) and (max-width: 992px) {
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 50vh;
@@ -323,7 +360,6 @@ p{
 
 }
 
-/*sm 768*/
 @media screen and (min-width: 992px) {
 	.we-are, .team, .web-page, .corporate-identity{
 		height: 100vh;
@@ -365,3 +401,5 @@ p{
 
 
 }
+
+
