@@ -104,6 +104,20 @@ function verifyHoverService(inweb, incorp, color1, color2){
     });
   }
 }
+
+efectoRedes();
+function efectoRedes(){
+  $( ".redes_btn" ).on("click", function(){
+    if ( $( ".redes" ).is( ":hidden" ) ) {
+        $( ".redes" ).show( "slow" );
+        $( ".redes" ).css({"display":"flex"});
+      } else {
+        $( ".redes" ).slideUp();
+      }
+  });
+
+}
+
 }
 
 $(document).ready(main());
