@@ -230,7 +230,7 @@ p{
 	position: absolute;
 	width: 50%;
 	margin: 0 auto;
-	top: 100%;
+	/*top: 100%;*/
 	left: 25%;
 }
 
